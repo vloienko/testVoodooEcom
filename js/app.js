@@ -346,7 +346,7 @@ function initMap() {
    var marker = new google.maps.Marker({
       position: pos,
       map: map,
-      icon: '../img/location.svg'
+      icon: './img/location.svg',
    });
 
    var info = new google.maps.InfoWindow({
