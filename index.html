@@ -1,20 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
+   <title>Contact form</title>
 </head>
+
 <body>
    <div class="wrapper">
       <header class="header">
 
       </header>
       <main class="main">
-         
+         <section class="contact">
+            <div class="container">
+               <div class="contact__box">
+                  <div class="contact__block">
+                     <h3 class="contact__title">
+                        Contact Us
+                     </h3>
+                     <p class="contact__text">
+                        The Voodoo team is looking forward to hearing from you!
+                     </p>
+                     <form class="contact__form" action="#">
+                        <div class="contact__form-box">
+                           <input class="contact__form-input" type="text" placeholder="Full Name*">
+                           <input class="contact__form-input" type="text" placeholder="Title/Position*">
+                           <div class="select contact__form-input">
+                              <div class="select__header">
+                                 <span class="select__current">Practice / Institution*</span>
+                                 <div class="select__icon">
+                                    <img src="img/arrow.svg" alt="">
+                                 </div>
+                              </div>
+                              <div class="select__body">
+                                 <div class="select__item">Option 1</div>
+                                 <div class="select__item">Option 2</div>
+                                 <div class="select__item">Option 3</div>
+                                 <div class="select__item">Option 4</div>
+                                 <div class="select__item">Option 5</div>
+                              </div>
+                           </div>
+                           <input class="contact__form-input" type="email" placeholder="Email Address*">
+                           <input class="contact__form-input" type="tel" placeholder="Phone Number*">
+                           <div class="select contact__form-input">
+                              <div class="select__header">
+                                 <span class="select__current">Medical Profession*</span>
+                                 <div class="select__icon">
+                                    <img src="img/arrow.svg" alt="">
+                                 </div>
+                              </div>
+                              <div class="select__body">
+                                 <div class="select__item">Option 1</div>
+                                 <div class="select__item">Option 2</div>
+                                 <div class="select__item">Option 3</div>
+                                 <div class="select__item">Option 4</div>
+                                 <div class="select__item">Option 5</div>
+                              </div>
+                           </div>
+                           <input class="contact__form-input contact__form-input--big" type="text" placeholder="Type of Inquiry*">
+                        </div>
+                        <textarea class="contact__form-input contact__form-text" name="text" placeholder="Enter Message*"></textarea>
+                        <button class="contact__form-btn">Send Message</button>
+                     </form>
+                  </div>
+                  <div class="contact__maps">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20355.30850707758!2d30.628123350000003!3d50.37748865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1667664505514!5m2!1suk!2sua"
+                        width="470" height="936" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
       <footer class="footer">
 
@@ -22,4 +84,5 @@
    </div>
    <script src="js/app.js"></script>
 </body>
+
 </html>
