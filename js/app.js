@@ -1,6 +1,7 @@
 let selectWrapper = document.querySelectorAll('.select-wrapper');
 const selectTextFirst = 'Practice / Institution*';
 const selectTextSecond = 'Medical Profession*';
+const selectTextThird = 'Type of Inquiry*';
 console.log(selectWrapper);
 
 selectWrapper.forEach((element, index) => {
@@ -28,6 +29,9 @@ selectWrapper.forEach((element, index) => {
    }
    if (index === 1) {
       element.querySelector('.select__current').innerHTML = selectTextSecond;
+   }
+   if (index === 2) {
+      element.querySelector('.select__current').innerHTML = selectTextThird;
    }
 });
 
@@ -60,7 +64,6 @@ let select = function () {
 };
 
 select();
-
 
 
 function initMap() {
@@ -348,18 +351,18 @@ function initMap() {
 
    var info = new google.maps.InfoWindow({
       content:
-         `<div class="contact-maps">
+         ` <div class="contact-maps">
             <h6 class="contact-maps__title">Voodoo</h6>
             <p class="contact-maps__adress">137 Glasgow St., Unit 115 <br> Kitchener, ON N2G 4X8 <br> Ukraine</p>
             <div class="contact-maps__item">
-               <div class="contact-maps__link">
+               <a class="contact-maps__link" href="tel:18004809597">
                   <img src="./img/phone.svg" alt="">
-                  <a href="tel:18004809597">1-800-480-9597</a>
-               </div>
-               <div class="contact-maps__link">
+                  <p>1-800-480-9597</p>
+               </a>
+               <a class="contact-maps__link" href="mailto:info@voodoo.com">
                   <img src="./img/mail.svg" alt="">
-                  <a href="mailto:info@voodoo.com">info@voodoo.com</a>
-               </div>
+                  <p>info@voodoo.com</p>
+               </a>
             </div>
          </div>
       `
@@ -369,4 +372,3 @@ function initMap() {
       info.open(map, marker);
    });
 }
-
