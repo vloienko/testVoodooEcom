@@ -40,8 +40,6 @@ body {
 	gap: 40px;
 }
 
-.contact__block {}
-
 .contact__title {
 	font-family: 'Avenir Next';
 	font-weight: 700;
@@ -54,8 +52,6 @@ body {
 	line-height: 28px;
 	margin-bottom: 35px;
 }
-
-.contact__form {}
 
 .contact__form-box {
 	display: grid;
@@ -107,8 +103,8 @@ body {
 	margin: 19px 0;
 }
 
-/* ---------- */
 
+/* -----Style Select----- */
 .select {
 	position: relative;
 }
@@ -168,3 +164,48 @@ body {
 	background-color: #f2f2f2;
 	padding-left: 12px;
 }
+/* ---------------------- */
+
+
+/* ---------Maps--------- */
+#map {
+	width: 470px;
+	height: 936px;
+}
+.contact-maps {
+	font-size: 12px;
+	width: 214px;
+	padding: 16px;
+}
+.contact-maps__title {
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.contact-maps__adress {
+	margin-bottom: 10px;
+}
+.contact-maps__item {
+	display: flex;
+	flex-direction: column;
+	color: #858585;
+}
+.contact-maps__link {
+	display: flex;
+	align-items: center;
+}
+.contact-maps__link:first-child {
+	margin-bottom: 5px;
+}
+.contact-maps__link img {
+	margin-right: 8px;
+}
+.gm-style .gm-style-iw-tc::after, .gmnoprint, .gm-style-cc {
+	display: none;
+}
+.gm-ui-hover-effect {
+	opacity: 0;
+}
+.gm-style .gm-style-iw-c {
+	box-shadow: 0px 15px 30px rgba(220, 221, 243, 0.25);
+}
+/* ---------------------- */
